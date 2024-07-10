@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Block Caller</string>
+    <string name="action_settings">Settings</string>
+    <string name="CheckedStartOnBoot">¿Iniciar en el arranque? </string>
+    <string name="StartService">Arrancar Servicio</string>
+    <string name="StopService">Terminar Servicio</string>
+    <string name="ListBlockedPhones">Números Bloqueados:</string>
+    <string name="SwitchServiceState">Estado del Servicio: </string>
+    <string name="ctx_menu_delete">Eliminar Numero</string>
+    <string name="NewNumber">Nuevo</string>
+
+</resources>

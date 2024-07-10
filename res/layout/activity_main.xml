@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <CheckBox
+        android:id="@+id/cbStartOnBoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/CheckedStartOnBoot" />
+
+    <ListView
+        android:id="@+id/lvBlockedPhones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbStartOnBoot"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnNuevoTelefono" >
+    </ListView>
+
+    <Switch
+        android:id="@+id/swServiceState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:text="@string/SwitchServiceState"
+        android:onClick="onToggleClicked" />
+
+    <TextView
+        android:id="@+id/tvBlockedPhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNuevoTelefono"
+        android:layout_alignBottom="@+id/btnNuevoTelefono"
+        android:layout_alignParentLeft="true"
+        android:text="@string/ListBlockedPhones" />
+
+    <Button
+        android:id="@+id/btnNuevoTelefono"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/swServiceState"
+        android:text="@string/NewNumber" />
+
+</RelativeLayout>
